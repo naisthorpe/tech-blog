@@ -19,4 +19,10 @@ module.exports = {
       return `<span for="img" aria-label="gear">⚙️</span>`;
     }
   },
+  dash_route: () => {
+    let currentPath = window.location.pathname;
+    if (currentPath == "dashboard") {
+      return true;
+    }
+  },
 };
